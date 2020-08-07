@@ -15,8 +15,7 @@ Person::Person(){
 Person::Person(string firstName, string lastName, int documentID){
   this.firstName = firstName;
   this.lastName = lastName;
-  
-
+  this.documentID = documentID;
 }
 
 Person::~Person(){
@@ -27,16 +26,16 @@ string Person::getfirstName(){
   return firstName;
 }
 
-void Person::setFirstName(string){
-
+void Person::setFirstName(string firstName){
+  this.firstName = firstName;
 }
 
 string Person::getlastName(){
   return lastName;
 }
 
-void Person::setLastName(string){
-
+void Person::setLastName(string lastName){
+  this.lastName = lastName;
 }
 
 int Person::getdocumentID(){
@@ -44,10 +43,10 @@ int Person::getdocumentID(){
 }
 
 void Person::setDocumentId(int){
-
+  this.documentID = documentID;
 }
 
-double Person::salary(double) const{
+double Person::salary(double ) const{
   double netsalary;
   return netsalary;
 

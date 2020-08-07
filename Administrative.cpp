@@ -5,3 +5,15 @@
 #include <sstream>
 #include <iomanip>
 #include "Administrative.h"
+
+Administrative::Administrative(){
+
+}
+
+Administrative::Administrative(double){
+
+}
+
+double Professor::getmonthlySalary(){
+  return monthlySalary;
+}
