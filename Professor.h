@@ -8,22 +8,23 @@
 
 class Professor: public Person {
   public:
-  Professor();
-  Professor(double, double);
-  virtual ~Professor();
-  double getmonthlySalary();
-  double getcommissionRate();
-  void setmonthlySalary(double);
-  void setcommissionRate(double);
-  double salary();
-  string toString();
- 
-
-
-
+    Professor();
+    Professor(double, double);
+    Professor(string,string,int,double, double);
+    virtual ~Professor();
+    double getmonthlySalary();
+    double getcommissionRate();
+    void setmonthlySalary(double);
+    void setcommissionRate(double);
+    double salary();
+    string toString();
+  
   private:
-  double monthlySalary;
-  double commissionRate;
+    string firstName;
+    string lastName;
+    int documentId;
+    double monthlySalary;
+    double commissionRate;
 
 };
 

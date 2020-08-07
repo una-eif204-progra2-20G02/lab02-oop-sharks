@@ -7,11 +7,16 @@
 #include "Professor.h"
 
 Professor::Professor(){
-
+  firstName = "";
+  lastName = "";
+  documentId = 0;
+  monthlySalary = 0;
+  commissionRate = 0;
 }
 
-Professor::Professor(double,double){
-
+Professor::Professor(string firstName, string lastName, int documentId, double monthlySalary, double commissionRate) :Person(firstName, lastName,documentId){
+  this.monthlySalary = monthlySalary;
+  this.commissionRate = commissionRate;
 }
 
 Professor::~Professor(){
