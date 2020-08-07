@@ -11,8 +11,8 @@ class Administrative: public Person {
 public:
   Administrative();
   Administrative(double);
-  double getmonthlySalary();
   void setmonthlySalary(double);
+  double getmonthlySalary();
   double salary();
   string toString();
 
