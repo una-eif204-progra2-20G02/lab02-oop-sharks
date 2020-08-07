@@ -14,6 +14,11 @@ Administrative::Administrative(double){
 
 }
 
+Administrative::Administrative(string,string,int,double){
+
+
+}
+
 void Administrative::setmonthlySalary(double){
 
 }

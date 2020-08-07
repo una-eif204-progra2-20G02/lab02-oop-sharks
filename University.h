@@ -10,6 +10,27 @@
 #include "Administrative.h"
 
 class University {
+  public
+    University();
+    University(string);
+    University(string,Professor,Administrative);
+    string getName();
+    void setName(string);
+    Professor getProfessor();
+    void setProfessor(Professor professor);
+    Administrative getAdministrative();
+    void setAdministrative(Administrative administrative);
+    void addProfessor(Professor _professor);
+    getListProfessor();
+    void addAdministrative(Administrative _administrative);
+    getListAdministrative();
+
+  private:
+    string name;
+    Professor professor;
+    Administrative administrative;
+    vector professorList;
+    vectot administrativeList;
 
 };
 
