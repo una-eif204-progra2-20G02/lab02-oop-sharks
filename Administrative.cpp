@@ -14,6 +14,20 @@ Administrative::Administrative(double){
 
 }
 
-double Professor::getmonthlySalary(){
+void Administrative::setmonthlySalary(double){
+
+}
+
+double Administrative::getmonthlySalary(){
   return monthlySalary;
+}
+
+double Administrative::salary(){
+  return salary;
+}
+
+string Administrative::toString() {
+  stringstream t;
+  t<<monthlySalary<<endl;
+  return t.str();
 }
