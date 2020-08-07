@@ -6,10 +6,13 @@ using std::stringstream;
 #include "Person.h"
 
 Person::Person(){
+  firstName = "";
+  lastName = "";
+  documentID = 0;
 
 }
 
-Person::Person(string, string, int){
+Person::Person(string firstName, string lastName, int documentID){
 
 }
 

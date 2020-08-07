@@ -8,7 +8,16 @@
 
 class Administrative: public Person {
 
-};
+public:
+  Administrative();
+  Administrative(double);
+  double getmonthlySalary();
+  void setmonthlySalary(double);
+  double salary();
+  string toString();
 
+
+private:
+  double monthSalary;
 
 #endif //LAB02_OOP_ADMINISTRATIVE_H
