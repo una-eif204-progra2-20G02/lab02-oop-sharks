@@ -14,7 +14,8 @@ Person::Person(){
 
 Person::Person(string firstName, string lastName, int documentID){
   this.firstName = firstName;
-  this.las
+  this.lastName = lastName;
+  
 
 }
 
