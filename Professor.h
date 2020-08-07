@@ -20,9 +20,9 @@ class Professor: public Person {
     string toString();
   
   private:
-    string firstName;
-    string lastName;
-    int documentId;
+    string firstName="";
+    string lastName="";
+    int documentID;
     double monthlySalary;
     double commissionRate;
 

@@ -19,6 +19,9 @@ public:
 
 
 private:
+  string firstName="";
+  string lastName="";
+  int documentID;
   double monthSalary;
 
 #endif //LAB02_OOP_ADMINISTRATIVE_H
