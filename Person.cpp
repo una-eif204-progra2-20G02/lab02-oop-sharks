@@ -42,8 +42,12 @@ void Person::setDocumentId(int){
 }
 
 double Person::salary(double) const{
+  double netsalary;
+  return netsalary;
+
 
 }
+
 
 string Person::toString() const{
   stringstream s;
