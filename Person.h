@@ -33,7 +33,7 @@ private:
   
   string firstName="";
   string lastName="";
-  int documentID;
+  int documentID = 0;
 
 };
 

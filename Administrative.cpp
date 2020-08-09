@@ -18,11 +18,11 @@ monthlySalary = monthlySalary;
 }
 
 Administrative::Administrative(string firstName, string lastName, int documentId, double monthlySalary) :Person(firstName, lastName,documentId){
-  this.monthlySalary = monthlySalary;
+  this->monthlySalary = monthlySalary;
 }
 
 void Administrative::setmonthlySalary(double monthlySalary){
-  this.monthlySalary = monthlySalary;
+  this->monthlySalary = monthlySalary;
 }
 
 double Administrative::getmonthlySalary(){

@@ -9,19 +9,19 @@
 Professor::Professor(){
   firstName = "";
   lastName = "";
-  documentId = 0;
+  documentID = 0;
   monthlySalary = 0;
   commissionRate = 0;
 }
 
 Professor::Professor(double monthlySalary ,double commissionRate){
-  this.monthlySalary = monthlySalary;
-  this.commissionRate = commissionRate;
+  this->monthlySalary = monthlySalary;
+  this->commissionRate = commissionRate;
 }
 
 Professor::Professor(string firstName, string lastName, int documentId, double monthlySalary, double commissionRate) :Person(firstName, lastName, documentId){
-  this.monthlySalary = monthlySalary;
-  this.commissionRate = commissionRate;
+  this->monthlySalary = monthlySalary;
+  this->commissionRate = commissionRate;
 }
 
 Professor::~Professor(){
@@ -36,11 +36,11 @@ double Professor::getcommissionRate(){
 }
 
 void Professor::setmonthlySalary(double monthlySalary){
-  this.monthlySalary = monthlySalary;
+  this->monthlySalary = monthlySalary;
 }
 
 void Professor::setcommissionRate(double commissionRate){
-  this.commissionRate = commissionRate;
+  this->commissionRate = commissionRate;
 }
 
 double Professor::salary(){

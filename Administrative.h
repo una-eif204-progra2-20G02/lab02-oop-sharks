@@ -19,6 +19,6 @@ public:
 
 
 private:
-  double monthSalary;
+  double monthlySalary;
 };
 #endif //LAB02_OOP_ADMINISTRATIVE_H

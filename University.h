@@ -10,7 +10,7 @@
 #include "Administrative.h"
 
 class University {
-  public
+  public:
     University();
     University(string);
     University(string,Professor,Administrative);
@@ -30,7 +30,7 @@ class University {
     Professor professor;
     Administrative administrative;
     vector professorList;
-    vectot administrativeList;
+    vector administrativeList;
 
 };
 
