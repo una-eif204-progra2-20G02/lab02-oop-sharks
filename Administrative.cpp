@@ -21,11 +21,11 @@ Administrative::Administrative(string firstName, string lastName, int documentId
   this->monthlySalary = monthlySalary;
 }
 
-void Administrative::setmonthlySalary(double monthlySalary){
+void Administrative::setMonthlySalary(double monthlySalary){
   this->monthlySalary = monthlySalary;
 }
 
-double Administrative::getmonthlySalary(){
+double Administrative::getMonthlySalary(){
   return monthlySalary;
 }
 

@@ -12,8 +12,8 @@ public:
   Administrative();
   Administrative(double);
   Administrative(string,string,int,double);
-  void setmonthlySalary(double);
-  double getmonthlySalary();
+  void setMonthlySalary(double);
+  double getMonthlySalary();
   double salary();
   string toString();
 
