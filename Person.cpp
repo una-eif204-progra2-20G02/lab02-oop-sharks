@@ -45,7 +45,7 @@ void Person::setDocumentId(int documentID){
   documentId = documentID;
 }
 
-double Person::salary(double ) const{
+double Person::salary() const{
   double netsalary;
   return netsalary;
 

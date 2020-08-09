@@ -52,7 +52,7 @@ double Professor::salary(){
 string Professor::toString() {
   stringstream s;
   Person::toString();
-  s<<monthlySalary<<endl;
-  s<<commissionRate<<endl;
+  //s<<"Professor Information: "<<
+  s<<"Doc Id"<<endl;
   return s.str();
 }

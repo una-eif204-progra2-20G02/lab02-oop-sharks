@@ -27,7 +27,7 @@ public:
   int getdocumentID();
   void setDocumentId(int);
   virtual string toString() const;
-  virtual double salary(double) const;
+  virtual double salary() const;
 
 protected:
   

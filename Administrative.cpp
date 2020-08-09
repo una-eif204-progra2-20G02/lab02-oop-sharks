@@ -30,12 +30,12 @@ double Administrative::getMonthlySalary(){
 }
 
 double Administrative::salary(){
-  return salary;
+  return monthlySalary;
 }
 
 string Administrative::toString() {
   stringstream t;
   Person::toString();
-  t<<monthlySalary<<endl;
+  t<<salary()<<endl;
   return t.str();
 } 
