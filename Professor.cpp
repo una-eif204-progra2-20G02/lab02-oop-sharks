@@ -9,7 +9,7 @@
 Professor::Professor(){
   firstName = "";
   lastName = "";
-  documentID = 0;
+  documentId = 0;
   monthlySalary = 0;
   commissionRate = 0;
 }

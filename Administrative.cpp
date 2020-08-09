@@ -13,8 +13,8 @@ Administrative::Administrative(){
   monthlySalary = 0;
 }
 
-Administrative::Administrative(double ){
-monthlySalary = monthlySalary;
+Administrative::Administrative(double monthlySalary){
+this->monthlySalary = monthlySalary;
 }
 
 Administrative::Administrative(string firstName, string lastName, int documentId, double monthlySalary) :Person(firstName, lastName,documentId){

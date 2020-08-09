@@ -29,11 +29,11 @@ public:
   virtual string toString() const;
   virtual double salary(double) const;
 
-private:
+protected:
   
   string firstName="";
   string lastName="";
-  int documentID = 0;
+  int documentId = 0;
 
 };
 

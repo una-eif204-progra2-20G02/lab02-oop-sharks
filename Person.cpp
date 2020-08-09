@@ -8,14 +8,13 @@ using std::stringstream;
 Person::Person(){
   firstName = "";
   lastName = "";
-  documentID = 0;
-
+  documentId = 0;
 }
 
 Person::Person(string firstName, string lastName, int documentID){
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.documentID = documentID;
+  this->firstName = firstName;
+  this->lastName = lastName;
+  documentId = documentID;
 }
 
 Person::~Person(){
@@ -27,7 +26,7 @@ string Person::getfirstName(){
 }
 
 void Person::setFirstName(string firstName){
-  this.firstName = firstName;
+  this->firstName = firstName;
 }
 
 string Person::getlastName(){
@@ -35,15 +34,15 @@ string Person::getlastName(){
 }
 
 void Person::setLastName(string lastName){
-  this.lastName = lastName;
+  this->lastName = lastName;
 }
 
 int Person::getdocumentID(){
-  return documentID;
+  return documentId;
 }
 
-void Person::setDocumentId(int){
-  this.documentID = documentID;
+void Person::setDocumentId(int documentID){
+  documentId = documentID;
 }
 
 double Person::salary(double ) const{
@@ -58,6 +57,6 @@ string Person::toString() const{
   stringstream s;
   s<<firstName<<endl;
   s<<lastName<<endl;
-  s<<documentID<<endl;
+  s<<documentId<<endl;
   return s.str();
 }
