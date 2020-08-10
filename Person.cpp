@@ -46,14 +46,14 @@ void Person::setDocumentId(int documentID){
 }
 
 double Person::salary() const{
-  double netsalary;
-  return netsalary;
+ // double netsalary;
+ // return netsalary;
 }
 
 
 string Person::toString() const{
-  stringstream s;
-  s<<firstName<<" "<<lastName<<endl;
-  s<<"Doc Id: "<<documentId<<","<<endl;
-  return s.str();
+ // stringstream s;
+ // s<<firstName<<" "<<lastName<<endl;
+ // s<<"Doc Id: "<<documentId<<","<<endl;
+  //return s.str();
 }

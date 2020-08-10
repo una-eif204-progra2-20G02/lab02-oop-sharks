@@ -43,22 +43,26 @@ void University::setAdministrative(Administrative *administrative){
   this->administrative = administrative;
 }
 
-void University::addProfessor(Professor *professor){
-  for(int i = 0 ; i < professorList->size();i++){
-    professorList[i] = professor;
+void University::addProfessor(Professor* professor){
+    professorList.push_back(professor);
+}
+
+string University::getListProfessor(){
+  stringstream u;
+  for(int i = 0 ; i < professorList.size();i++){
+    u<<professorList[i]->toString();
   }
+  return u.str();
 }
 
-vector<Professor>* University::getListProfessor(){
-  return professorList;
+void University::addAdministrative(Administrative* administrative){
+    administrativeList.push_back(administrative);
 }
 
-void University::addAdministrative(Administrative *administrative){
-    for(int i = 0 ; i < administrativeList->size();i++){
-    administrativeList[i] = administrative;
+string University::getListAdministrative(){
+  stringstream u;
+  for(int i = 0 ; i < administrativeList.size();i++){
+    u<<administrativeList[i]->toString();
   }
-}
-
-vector<Administrative>* University::getListAdministrative(){
-  return administrativeList;
+  return u.str();
 }

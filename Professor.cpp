@@ -6,10 +6,7 @@
 #include <sstream>
 #include "Professor.h"
 
-Professor::Professor(){
-  firstName = "";
-  lastName = "";
-  documentId = 0;
+Professor::Professor():Person(){
   monthlySalary = 0;
   commissionRate = 0.05;
 }
@@ -51,6 +48,7 @@ double Professor::salary(){
 
 string Professor::toString() {
   stringstream s;
-  s<<"Professor Information: "<<Person::toString()<<" Monthly Salary: "<<salary()<<endl;
+  s<<"Professor Information: "<<firstName<<" "<<lastName<<endl;
+  s<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
   return s.str();
 }

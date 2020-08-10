@@ -6,15 +6,12 @@
 #include <iomanip>
 #include "Administrative.h"
 
-Administrative::Administrative(){
-  firstName = "";
-  lastName = "";
-  documentId = 0;
+Administrative::Administrative():Person(){
   monthlySalary = 0;
 }
 
 Administrative::Administrative(double monthlySalary){
-this->monthlySalary = monthlySalary;
+  this->monthlySalary = monthlySalary;
 }
 
 Administrative::Administrative(string firstName, string lastName, int documentId, double monthlySalary) :Person(firstName, lastName,documentId){
@@ -35,6 +32,7 @@ double Administrative::salary(){
 
 string Administrative::toString() {
   stringstream t;
-  t<<"Administrative Information: "<<Person::toString()<<" Monthly Salary: "<<salary()<<endl;
+  t<<"Administrative Information: "<<firstName<<" "<<lastName<<endl;
+  t<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
   return t.str();
 } 

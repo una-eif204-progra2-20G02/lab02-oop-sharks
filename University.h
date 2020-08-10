@@ -21,16 +21,16 @@ class University {
     Administrative* getAdministrative();
     void setAdministrative(Administrative *administrative);
     void addProfessor(Professor *professor);
-    vector<Professor>* getListProfessor();
+    string getListProfessor();
     void addAdministrative(Administrative *administrative);
-    vector<Administrative>* getListAdministrative();
+    string getListAdministrative();
 
   private:
     string name;
     Professor* professor;
     Administrative* administrative;
-    vector<Professor>* professorList;
-    vector<Administrative>* administrativeList;
+    vector<Professor*> professorList;
+    vector<Administrative*> administrativeList;
 };
 
 
