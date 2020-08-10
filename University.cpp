@@ -44,7 +44,7 @@ void University::setAdministrative(Administrative *administrative){
 }
 
 void University::addProfessor(Professor *professor){
-  for(int i = 0 ; i < professorList->size();++){
+  for(int i = 0 ; i < professorList->size();i++){
     professorList[i] = professor;
   }
 }
