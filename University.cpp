@@ -54,7 +54,7 @@ vector<Professor>* University::getListProfessor(){
 }
 
 void University::addAdministrative(Administrative *administrative){
-    for(int i = 0 ; i < administrativeList->size();++){
+    for(int i = 0 ; i < administrativeList->size();i++){
     administrativeList[i] = administrative;
   }
 }
