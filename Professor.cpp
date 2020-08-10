@@ -42,7 +42,7 @@ void Professor::setcommissionRate(double commissionRate){
 
 double Professor::salary(){
   double netSalary;
-  netSalary=monthlySalary-commissionRate;
+  netSalary=monthlySalary+commissionRate;
   return netSalary;
 }
 
