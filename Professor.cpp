@@ -11,7 +11,7 @@ Professor::Professor(){
   lastName = "";
   documentId = 0;
   monthlySalary = 0;
-  commissionRate = 0;
+  commissionRate = 0.05;
 }
 
 Professor::Professor(double monthlySalary ,double commissionRate){
@@ -45,13 +45,12 @@ void Professor::setcommissionRate(double commissionRate){
 
 double Professor::salary(){
   double netSalary;
-  netSalary=monthlySalary+commissionRate;
+  netSalary=monthlySalary-commissionRate;
   return netSalary;
 }
 
 string Professor::toString() {
   stringstream s;
-  s<<"Professor Information: "<<firstName<<endl;
-  s<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
+  s<<"Professor Information: "<<Person::toString()<<" Monthly Salary: "<<salary()<<endl;
   return s.str();
 }

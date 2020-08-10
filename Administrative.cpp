@@ -35,7 +35,6 @@ double Administrative::salary(){
 
 string Administrative::toString() {
   stringstream t;
-  t<<"Administrative Information: "<<firstName<<endl;
-  t<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
+  t<<"Administrative Information: "<<Person::toString()<<" Monthly Salary: "<<salary()<<endl;
   return t.str();
 } 
