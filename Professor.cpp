@@ -7,7 +7,7 @@
 #include "Professor.h"
 
 Professor::Professor():Person(){
-  monthlySalary = 0;
+  monthlySalary = 0.0;
   commissionRate = 0.05;
 }
 
@@ -42,13 +42,13 @@ void Professor::setcommissionRate(double commissionRate){
 
 double Professor::salary(){
   double netSalary;
-  netSalary=monthlySalary+commissionRate;
+  netSalary=monthlySalary+monthlySalary*commissionRate;
   return netSalary;
 }
 
 string Professor::toString() {
   stringstream s;
   s<<"Professor Information: "<<firstName<<" "<<lastName<<endl;
-  s<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
+  s<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<< setprecision(2) << fixed <<salary()<<endl;
   return s.str();
 }

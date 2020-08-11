@@ -7,7 +7,7 @@
 #include "Administrative.h"
 
 Administrative::Administrative():Person(){
-  monthlySalary = 0;
+  monthlySalary = 0.0;
 }
 
 Administrative::Administrative(double monthlySalary){
@@ -33,6 +33,6 @@ double Administrative::salary(){
 string Administrative::toString() {
   stringstream t;
   t<<"Administrative Information: "<<firstName<<" "<<lastName<<endl;
-  t<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<<salary()<<endl;
+  t<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<< setprecision(2) << fixed <<salary()<<endl;
   return t.str();
 } 

@@ -31,9 +31,9 @@ public:
 
 protected:
   
-  string firstName="";
-  string lastName="";
-  int documentId = 0;
+  string firstName;
+  string lastName;
+  int documentId;
 
 };
 
